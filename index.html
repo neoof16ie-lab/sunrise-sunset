@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Language</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f7f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+    .btn-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+    .btn-ja { background-color: #ff4757; }
+    .btn-ja:hover { background-color: #ff6b81; transform: translateY(-2px); }
+    .btn-en { background-color: #2ed573; }
+    .btn-en:hover { background-color: #2bcbba; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Select Language</h1>
+    <div class="btn-container">
+      <a href="./ja/" class="btn btn-ja">Japanese (JA)</a>
+      <a href="./en/" class="btn btn-en">English (EN)</a>
+    </div>
+  </div>
+
+</body>
+</html>
